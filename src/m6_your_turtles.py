@@ -89,3 +89,5 @@ for i in range(90):
     d.forward(0.3)
 
 window.close_on_mouse_click()
+
+print('Lily of the valley  &  Butterfly')
