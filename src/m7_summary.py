@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 window=rg.TurtleWindow()
 
-b=rg.SimpleTurtle()
+b=rg.SimpleTurtle('turtle')
 b.pen=rg.Pen('blue',10)
 
 b.left(90)
