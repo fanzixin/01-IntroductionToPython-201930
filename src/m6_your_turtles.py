@@ -33,7 +33,7 @@ import rosegraphics as rg
 window=rg.TurtleWindow()
 window.tracer(10)
 
-c=rg.SimpleTurtle()
+c=rg.SimpleTurtle('circle')
 c.pen=rg.Pen('green yellow',10)
 
 c.pen_up()
@@ -61,7 +61,7 @@ for i in range(4):
         c.forward(0.3)
 
 
-d=rg.SimpleTurtle()
+d=rg.SimpleTurtle('circle')
 d.pen=rg.Pen('blue',5)
 
 d.left(30)
