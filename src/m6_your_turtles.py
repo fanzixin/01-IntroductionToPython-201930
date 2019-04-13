@@ -28,6 +28,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+'''
 import rosegraphics as rg
 
 window=rg.TurtleWindow()
@@ -91,3 +92,78 @@ for i in range(90):
 window.close_on_mouse_click()
 
 print('Lily of the valley  &  Butterfly')
+'''
+
+import rosegraphics as rg
+import math
+
+window=rg.TurtleWindow()
+window.tracer(3)
+
+c=rg.SimpleTurtle('blank')
+c.pen = rg.Pen('yellow', 10)
+
+c.pen_up()
+c.go_to(rg.Point(75,0))
+c.pen_down()
+
+c.left(90)
+
+for k in range(360):
+    c.left(1)
+    c.forward(2 * 75 * math.sin(0.5 * math.pi / 180))
+
+c.pen.color = 'red'
+
+c.pen_up()
+c.go_to(rg.Point(150,0))
+c.pen_down()
+
+c.right(60)
+
+for j in range(6):
+    for k in range(180):
+        c.left(1)
+        c.forward(2 * 75 * math.sin(0.5 * math.pi / 180))
+    c.right(120)
+
+c.pen.color = 'green'
+
+c.pen_up()
+c.go_to(rg.Point(165,0))
+c.pen_down()
+
+c.go_to(rg.Point(300,0))
+
+c.left(90)
+
+for j in range(50):
+    c.left(1)
+    c.forward(2 * 150 * math.sin(0.5 * math.pi / 180))
+
+c.pen_up()
+c.go_to(rg.Point(300,0))
+c.pen_down()
+
+c.left(70)
+
+for j in range(50):
+    c.right(1)
+    c.forward(2 * 150 * math.sin(0.5 * math.pi / 180))
+
+c.pen_up()
+c.go_to(rg.Point(210,0))
+c.pen_down()
+
+c.right(150)
+c.forward(65)
+
+c.pen_up()
+c.go_to(rg.Point(210,0))
+c.pen_down()
+
+c.right(80)
+c.forward(65)
+
+
+window.close_on_mouse_click()
