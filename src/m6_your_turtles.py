@@ -28,7 +28,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
-'''
+
 import rosegraphics as rg
 
 window=rg.TurtleWindow()
@@ -92,8 +92,10 @@ for i in range(90):
 window.close_on_mouse_click()
 
 print('Lily of the valley  &  Butterfly')
-'''
 
+
+
+'''
 import rosegraphics as rg
 import math
 
@@ -165,5 +167,5 @@ c.pen_down()
 c.right(80)
 c.forward(65)
 
-
 window.close_on_mouse_click()
+'''
